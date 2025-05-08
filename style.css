@@ -397,5 +397,6 @@ section.rodape .flex{
     /* RODAPE */
     section.rodape .flex{
         align-items: center;
+        margin: 40px 20px;
     }
 }
