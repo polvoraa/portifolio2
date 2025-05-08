@@ -110,7 +110,7 @@ section.especialidades{
 }
 
 section.especialidades .flex{
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .especialidades .especialidades-box{
@@ -296,7 +296,7 @@ section.rodape .flex{
 }
 .rodape .txt-rodape h2 span{
     color: #874aff;
-
+    margin-bottom: 20px
 }
 
 .rodape .txt-rodape p{
