@@ -110,7 +110,7 @@ section.especialidades{
 }
 
 section.especialidades .flex{
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .especialidades .especialidades-box{
