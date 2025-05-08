@@ -382,7 +382,7 @@ section.rodape .flex{
     /* PORTIFOLIO */
     section.portifolio{
         padding: 80px 8%;
-    }
+    }  
 
     .img-port{
         width: 100%;
@@ -392,5 +392,10 @@ section.rodape .flex{
 
     section.portifolio .flex{
         gap: 60px;
+    }
+
+    /* RODAPE */
+    section.rodape .flex{
+        align-items: center;
     }
 }
