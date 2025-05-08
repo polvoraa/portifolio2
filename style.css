@@ -277,6 +277,51 @@ form .btn-enviar input{
     transition: 2s;
 }
 
+/* ESTILO DO RODAPE */
+section.rodape{
+    padding: 40px 4%;
+    box-shadow: #151319 0 0 18px;
+}
+
+section.rodape .flex{
+    align-items: center;
+}
+
+.rodape .txt-rodape{
+    color: #fff;
+
+}
+
+.rodape .txt-rodape h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.rodape .txt-rodape h2 span{
+    color: #874aff;
+
+}
+
+.rodape .txt-rodape p{
+    font-size: 24px;
+}
+
+.rodape .txt-rodape p span{
+    color: #874aff;
+}
+
+.rodape .txt-rodape .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #874aff;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20px 10px;
+    transition: .2s;
+}
+
 @media screen and (max-width: 1020px){
     /* CLASSES GERAIS */
     .flex{
