@@ -230,7 +230,7 @@ section.portifolio .flex{
 }
 
 /* ESTILO DO FORMULARIO DE CONTATO */
-section.formulario{
+.contact-form{
     padding: 80px 4%;
 }
 
@@ -259,20 +259,28 @@ form textarea{
     max-height: fit-content;
 }
 
-form .btn-enviar{
-    margin-top: 40px;
-    text-align: center;
+form button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #874aff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
 }
 
-form .btn-enviar input{
-    width: 120px;
-    background-color: #874aff;
-    color: #fff;
-    font-size: larger;
-    font-weight: 400px;
-    cursor: pointer;
-    transition: 2s;
+form h2{
+    color:#fff;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
+form h2 span{
+    color: #874aff;
+}
+
 
 /* ESTILO DO RODAPE */
 section.rodape{
