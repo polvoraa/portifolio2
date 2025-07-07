@@ -391,41 +391,46 @@ section.rodape .flex {
     flex-direction: column-reverse;
   }
 
-  .menu-desktop,
-  .btn-contato {
+  .menu-desktop {
     display: none;
   }
 
   section.topo-do-site {
-    padding: 20px 10%;
+    padding: 20px 5%;
+    padding-top: 160px;
   }
 
-  .topo-do-site h1 {
-    font-size: 30px;
-    margin: 40px;
+  .topo-do-site .txt-topo-site h1 {
+    font-size: 28px;
+    text-align: center;
   }
 
   .topo-do-site .txt-topo-site p {
-    margin: 40px 40px;
+    margin: 20px 0;
+    padding: 0 10px;
+    text-align: center;
   }
 
   .topo-do-site .img-topo-site img {
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
   }
 
   section.especialidades {
-    padding: 40px 8%;
+    padding: 40px 6%;
   }
 
   h2.titulo {
-    font-size: 34px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .sobre .txt-sobre h2 {
-    font-size: 34px;
-    line-height: 35px;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .sobre .txt-sobre p {
     text-align: center;
   }
 
@@ -438,21 +443,33 @@ section.rodape .flex {
   }
 
   section.portifolio {
-    padding: 80px 8%;
+    padding: 60px 5%;
   }
 
   .img-port {
     width: 100%;
     max-width: 360px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   section.portifolio .flex {
-    gap: 60px;
+    gap: 40px;
+  }
+
+  .portifolio .btn-contato {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  form button,
+  .btn-contato button {
+    width: 100%;
   }
 
   section.rodape .flex {
+    flex-direction: column;
     align-items: center;
-    margin: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
   }
 }
