@@ -64,12 +64,13 @@ header {
 }
 
 header.shrink {
-  padding: 0px 0%;
+  padding: -50px 0%;
   backdrop-filter: blur(12px);
   background: rgba(29, 26, 35, 0.6);
   transition: all 0.3s ease;
   border-radius: 20px;
 }
+
 
 
 header > .interface {
