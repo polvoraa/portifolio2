@@ -382,6 +382,23 @@ section.rodape .flex {
 
 /* RESPONSIVO */
 @media screen and (max-width: 1020px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100vw;
+    left: 0;
+    right: 0;
+    padding: 10px 5%;
+    box-sizing: border-box;
+  }
+
+  .btn-darkmode-fixed {
+    right: 10px;
+    bottom: 10px;
+  }
   .flex {
     flex-direction: column;
     align-items: center;
@@ -473,3 +490,4 @@ section.rodape .flex {
     text-align: center;
   }
 }
+
