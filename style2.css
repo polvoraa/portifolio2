@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #1d1a23; /* escuro, manter como cinza escuro */
+  background-color: #1d1a23;
   height: 100vh;
 }
 
@@ -24,7 +24,7 @@ body {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #f0f0f0; /* branco suave */
+  background-color: #fff;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -32,13 +32,13 @@ body {
 }
 
 h2.titulo {
-  color: #f0f0f0; /* branco suave */
+  color: #fff;
   font-size: 38px;
   text-align: center;
 }
 
 h2.titulo span {
-  color: #999999; /* cinza médio */
+  color: #874aff;
 }
 
 button:hover,
@@ -55,21 +55,23 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(40, 40, 40, 0.4); /* fundo cinza escuro translúcido */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(29, 26, 35, 0.4); /* Fundo semi-transparente */
+  backdrop-filter: blur(12px);       /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(12px); /* Compatibilidade Safari */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda leve para o efeito */
+  border-radius: 30px; /* Ajuste: menos curvado para combinar com estilo glass */
 }
 
 header.shrink {
-  padding: 0px 0%;
+  padding: -50px 0%;
   backdrop-filter: blur(12px);
-  background: rgba(40, 40, 40, 0.6);
+  background: rgba(29, 26, 35, 0.6);
   transition: all 0.3s ease;
   border-radius: 20px;
 }
+
+
 
 header > .interface {
   display: flex;
@@ -78,13 +80,13 @@ header > .interface {
 }
 
 header a {
-  color: #999999; /* cinza médio */
+  color: #adadad;
   text-decoration: none;
   display: inline-block;
 }
 
 header a:hover {
-  color: #f0f0f0; /* branco suave */
+  color: #fff;
   transform: scale(1.1);
   transition: 0.2s;
 }
@@ -112,17 +114,17 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 {
-  color: #f0f0f0;
+  color: #fff;
   font-size: 42px;
   line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-  color: #999999;
+  color: #874aff;
 }
 
 .topo-do-site .txt-topo-site p {
-  color: #f0f0f0;
+  color: #fff;
   margin: 40px 0px;
 }
 
@@ -136,7 +138,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-  color: #f0f0f0;
+  color: #fff;
   padding: 40px;
   border-radius: 60px;
   margin-top: 45px;
@@ -150,7 +152,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box i {
   font-size: 70px;
-  color: #999999;
+  color: #874aff;
 }
 
 .especialidades .especialidades-box h3 {
@@ -168,7 +170,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-  color: #f0f0f0;
+  color: #fff;
 }
 
 .sobre .txt-sobre h2 {
@@ -176,15 +178,13 @@ section.sobre .flex {
   line-height: 40px;
   margin-bottom: 30px;
 }
-
 .sobre .txt-sobre h2 span {
-  color: #999999;
+  color: #874aff;
   display: block;
 }
 
 .sobre .txt-sobre p {
   margin: 20px 0;
-  color: #f0f0f0;
 }
 
 .sobre .txt-sobre .btn-social button {
@@ -192,7 +192,7 @@ section.sobre .flex {
   height: 60px;
   border-radius: 50%;
   border: none;
-  background-color: #999999;
+  background-color: #874aff;
   font-size: 30px;
   cursor: pointer;
   margin: 0 10px;
@@ -204,7 +204,7 @@ section.portifolio {
   padding: 100px 4%;
   box-shadow: 0 0 40px 10px #100e13;
   border-radius: 80px;
-  background-color: #2a2a2a;
+  background-color: #1d1a23;
   margin-top: 100px;
   margin-left: 10px;
   margin-right: 10px;
@@ -237,14 +237,14 @@ section.portifolio .flex {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.59);
+  background-color: #00000096;
   border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   font-weight: 600;
-  color: #f0f0f0;
+  color: #fff;
   opacity: 0;
   transition: 0.5s;
 }
@@ -276,13 +276,12 @@ form {
 form input,
 form textarea {
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #fff;
   border: 0;
   outline: 0;
   border-radius: 20px;
   font-size: 15px;
   padding: 20px 15px;
-  color: #222222;
 }
 
 form textarea {
@@ -294,23 +293,22 @@ form button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #999999;
+  background-color: #874aff;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
-  color: #222222;
 }
 
 form h2 {
-  color: #f0f0f0;
+  color: #fff;
   font-size: 38px;
   text-align: center;
   margin-bottom: 10px;
 }
 
 form h2 span {
-  color: #999999;
+  color: #874aff;
 }
 
 /* RODAPÉ */
@@ -324,7 +322,7 @@ section.rodape .flex {
 }
 
 .rodape .txt-rodape {
-  color: #f0f0f0;
+  color: #fff;
 }
 
 .rodape .txt-rodape h2 {
@@ -332,19 +330,17 @@ section.rodape .flex {
   line-height: 40px;
   margin-bottom: 30px;
 }
-
 .rodape .txt-rodape h2 span {
-  color: #999999;
+  color: #874aff;
   margin-bottom: 20px;
 }
 
 .rodape .txt-rodape p {
   font-size: 20px;
-  color: #f0f0f0;
 }
 
 .rodape .txt-rodape p span {
-  color: #999999;
+  color: #874aff;
 }
 
 .rodape .txt-rodape .btn-social button {
@@ -352,7 +348,7 @@ section.rodape .flex {
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: #999999;
+  background-color: #874aff;
   font-size: 20px;
   cursor: pointer;
   margin: 20px 10px;
@@ -373,15 +369,15 @@ section.rodape .flex {
   font-weight: bold;
   border: none;
   border-radius: 30px;
-  background-color: #666666;
-  color: #f0f0f0;
+  background-color: #874aff;
+  color: white;
   cursor: pointer;
   box-shadow: 0 0 10px #00000066;
   transition: 0.3s;
 }
 
 .btn-darkmode-fixed button:hover {
-  background-color: #888888;
+  background-color: #a78bfa;
 }
 
 /* RESPONSIVO */
