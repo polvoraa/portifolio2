@@ -71,6 +71,15 @@ header.shrink {
   border-radius: 20px;
 }
 
+header.shrink .logo img {
+  height: 80px;
+}
+
+header.shrink .btn-contato button {
+  padding: 5px 25px;
+  font-size: 14px;
+}
+
 header > .interface {
   display: flex;
   align-items: center;
@@ -97,6 +106,50 @@ header nav ul li {
   display: inline-block;
   padding: 0 40px;
 }
+
+/* Botão toggle tradução */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
 
 /* TOPO DO SITE */
 section.topo-do-site {
@@ -367,6 +420,13 @@ section.rodape .flex {
   z-index: 9999;
 }
 
+.language-switcher{
+  position: fixed;
+  bottom: 30px;
+  right: 180px;
+  z-index: 9999;
+}
+
 .btn-darkmode-fixed button {
   padding: 12px 20px;
   font-size: 16px;
@@ -399,6 +459,12 @@ section.rodape .flex {
     box-sizing: border-box;
   }
 
+  .logo img {
+  max-width: 140px;
+  height: auto;
+  }
+
+
   .btn-darkmode-fixed {
     right: 10px;
     bottom: 10px;
@@ -411,6 +477,7 @@ section.rodape .flex {
 
   .topo-do-site .flex {
     flex-direction: column-reverse;
+    margin-top: -30px;
   }
 
   .menu-desktop,
@@ -475,6 +542,21 @@ section.rodape .flex {
     gap: 40px;
   }
 
+  section.portifolio {
+  padding: 40px 4%;
+  border-radius: 50px;
+  margin-top: 40px;
+  }
+
+    .img-port {
+    width: 310px;
+    height: 410px;
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    margin: 1px;
+    }
+
   .portifolio .btn-contato {
     margin: 40px auto;
     text-align: center;
@@ -485,9 +567,42 @@ section.rodape .flex {
     width: 100%;
   }
 
+  /* FORMULÁRIO */
+    .contact-form {
+    padding: 80px 4%;
+    }
+
+    form {
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    }
+
+
   section.rodape .flex {
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
+
   }
+
+  /*botão hamburguer cabeçalho mobile*/
+    .mobile-menu-icon button{
+    background-color: transparent;
+    border: none;
+    color: #f0f0f0;
+  }
+
+  .mobile-menu-icon button:hover {
+
+    background-color: transparent;
+    border: none;
+    color: #f0f0f0;     
+    }
+    
+    .mobile-menu-icon i {
+    height: 50px;
+    width: auto;
+    }
+
 }
