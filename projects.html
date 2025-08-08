@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link id="theme-style" rel="stylesheet" href="style2.css" />
+  <title>Projetos | Pólvora</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      margin-top: 100px;
+      color: #f0f0f0;
+      padding: 40px 0;
+    }
+
+    .interface {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+
+    .menu-desktop ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+    }
+
+    .menu-desktop ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .mobile-menu-icon {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #1d1a23;
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      padding: 20px;
+      z-index: 999;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid #444;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 4%;
+    }
+
+    section.projeto {
+      margin-top: 60px;
+      padding: 40px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    section.projeto h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    section.projeto p {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 20px;
+      max-width: 700px;
+    }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+
+    .galeria-grid img,
+    .galeria img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 0 8px #00000050;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria-grid img:hover,
+    .galeria img:hover {
+      transform: scale(1.03);
+    }
+
+    .img1 {
+      grid-row: 1 / span 2;
+      grid-column: 1 / 2;
+    }
+
+    .img2 {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+
+    .img3 {
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
+    }
+
+    .img4 {
+      grid-row: 2 / 3;
+      grid-column: 2 / span 2;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    header.shrink .logo img {
+     height: 80px;
+}
+
+header.shrink .btn-contato a button {
+  padding: 4px 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-contato a button {
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+
+    @media screen and (max-width: 1020px) {
+      .menu-desktop, .btn-contato {
+        display: none;
+      }
+
+      .mobile-menu-icon {
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      header .interface {
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .galeria-grid {
+        display: flex;
+        flex-direction: column;
+      }
+
+      section.projeto h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      section.projeto p {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="btn-darkmode-fixed">
+    <button onclick="toggleDarkMode()">color mode</button>
+  </div>
+
+  <div class="language-switcher">
+    <span class="lang-label">PT</span>
+      <label class="switch">
+        <input type="checkbox" id="lang-toggle" />
+        <span class="slider"></span>
+      </label>
+      <span class="lang-label">EN</span>
+    </div>
+
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#"><img src="logo200.png" alt="Logo" /></a>
+      </div>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#espec">Especialidades</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+        </ul>
+      </nav>
+      <div class="btn-contato">
+        <a href="https://wa.me/54997136790"><button>Contato</button></a>
+      </div>
+      <div class="mobile-menu-icon">
+        <button onclick="toggleMenu()"><i id="menu-icon" class="bi bi-three-dots-vertical"></i></button>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <a href="index.html">Início</a>
+      <a href="index.html#espec">Especialidades</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="https://wa.me/54997136790">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projeto">
+      <h1>Design</h1>
+      <p>Deselvolvimento de identidade artística e visual para um álbum musical.</p>
+      <div class="galeria-grid">
+        <img src="1-1.png" alt="Imagem 1 do projeto 1" class="img1">
+        <img src="2-1.png" alt="Imagem 2 do projeto 1" class="img2">
+        <img src="3-1.png" alt="Imagem 3 do projeto 1" class="img3">
+        <img src="4-1.png" alt="Render horizontal paisagem" class="img4">
+      </div>
+    </section>
+
+    <section class="projeto">
+      <h1>Desenvolvimento web</h1>
+      <p>Desenvolvimento de sites com identidade própria para empresas e personalidades.</p>
+      <div class="galeria">
+        <img href=index.html src="1-2.png" alt="Imagem 1 do projeto 2">
+        <img href="https://polvoraa.github.io/polvoraconsultoria/" src="2-2.png" alt="Imagem 2 do projeto 2">
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleDarkMode() {
+      const themeLink = document.getElementById("theme-style");
+      const currentTheme = themeLink.getAttribute("href");
+      const newTheme = currentTheme === "style.css" ? "style2.css" : "style.css";
+      themeLink.setAttribute("href", newTheme);
+      localStorage.setItem("theme", newTheme);
+    }
+
+    window.onload = () => {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.getElementById("theme-style").setAttribute("href", savedTheme);
+      }
+    };
+
+    function toggleMenu() {
+      const menu = document.querySelector(".mobile-menu");
+      menu.classList.toggle("open");
+    }
+
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('shrink');
+      } else {
+        header.classList.remove('shrink');
+      }
+    });
+  </script>
+</body>
+</html>
