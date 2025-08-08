@@ -29,12 +29,14 @@
     <button onclick="toggleDarkMode()">color mode</button>
   </div>
 
-  <div class="language-switcher">
-    <label class="switch">
-      <input type="checkbox" id="lang-toggle" />
-      <span class="slider"></span>
-    </label>
-  </div>
+<div class="language-switcher">
+  <span class="lang-label">PT</span>
+  <label class="switch">
+    <input type="checkbox" id="lang-toggle" />
+    <span class="slider"></span>
+  </label>
+  <span class="lang-label">EN</span>
+</div>
 
   <header>
     <div class="interface">
@@ -46,15 +48,15 @@
 
       <nav class="menu-desktop">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#espec">Especialidades</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="https://polvoraa.github.io/projetos/">Projetos</a></li>
+          <li><a href="#" data-i18n="menu_home">Início</a></li>
+          <li><a href="#espec" data-i18n="menu_specialties">Especialidades</a></li>
+          <li><a href="#sobre" data-i18n="menu_about">Sobre</a></li>
+          <li><a href="https://polvoraa.github.io/projetos/" data-i18n="menu_projects">Projetos</a></li>
         </ul>
       </nav>
 
       <div class="btn-contato">
-        <a href="https://wa.me/54997136790"><button>Contato</button></a>
+        <a href="https://wa.me/54997136790"><button data-i18n="btn_contact">Contato</button></a>
       </div>
 
       <div class="mobile-menu-icon">
@@ -63,11 +65,11 @@
     </div>
 
     <nav class="mobile-menu">
-      <a href="#">Início</a>
-      <a href="#espec">Especialidades</a>
-      <a href="#sobre">Sobre</a>
-      <a href="https://polvoraa.github.io/projetos/">Projetos</a>
-      <a href="https://wa.me/54997136790">Contato</a>
+      <a href="#" data-i18n="menu_home">Início</a>
+      <a href="#espec" data-i18n="menu_specialties">Especialidades</a>
+      <a href="#sobre" data-i18n="menu_about">Sobre</a>
+      <a href="https://polvoraa.github.io/projetos/" data-i18n="menu_projects">Projetos</a>
+      <a href="https://wa.me/54997136790" data-i18n="btn_contact">Contato</a>
     </nav>
   </header>
 
@@ -81,7 +83,7 @@
 
                     <div class="btn-contato">
                         <a href="https://wa.me/54997136790">
-                            <button data-i18n="btn_contact">Entre em contato</button>
+                            <button data-i18n="btn_contact">Contato</button>
                         </a>
                     </div>
                 </div>
@@ -91,7 +93,7 @@
 
          <section class="portifolio">
             <div class="interfaace">
-                <h2 class="titulo">ALGUNS <span>EXEMPLOS:</span></h2>
+                <h2 class="titulo" data-i18n="portfolio_title">ALGUNS <span>EXEMPLOS:</span></h2>
                 <div class="flex">
                     <div class="img-port" style="background-image: url(roll1rev1.png);">
                         <a href="https://polvoraa.github.io/projetos/">
@@ -107,7 +109,7 @@
                     </div> <!-- fechamento interface-->
                 </div> <!-- fechamento flex-->
             </div>
-            <div class="btn-contato">
+            <div class="btn-contato" >
                 <a href="https://polvoraa.github.io/projetos/">
                     <button>Mais Projetos</button>
                 </a>
@@ -121,9 +123,9 @@
                     </div>
 
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>SOU MATHEUS PÓLVORA</span></h2>
-                        <p>Sou um criador visual movido pela curiosidade e pela vontade de transformar ideias em impacto. Minha experiência passa por diversas áreas do design digital, como edição de imagem e vídeo, criação gráfica, modelagem 3D, capas de álbum e thumbnails para redes sociais. Acredito que explorar diferentes formatos me dá repertório para desenvolver soluções visuais únicas e adaptadas a cada projeto.</p>
-                        <p>Mais do que entregar um arquivo bonito, meu foco está em alcançar um resultado que realmente comunique e faça sentido para quem vai usá-lo. Por isso, mantenho um processo aberto ao diálogo e à escuta — se o cliente não estiver satisfeito, o trabalho ainda não terminou. Meu objetivo é sempre entregar algo que una técnica, criatividade e propósito.</p>
+                        <h2 data-i18n="about_title">MUITO PRAZER, <span>SOU MATHEUS PÓLVORA</span></h2>
+                        <p data-i18n="about_p1">Sou um criador visual movido pela curiosidade e pela vontade de transformar ideias em impacto. Minha experiência passa por diversas áreas do design digital, como edição de imagem e vídeo, criação gráfica, modelagem 3D, capas de álbum e thumbnails para redes sociais. Acredito que explorar diferentes formatos me dá repertório para desenvolver soluções visuais únicas e adaptadas a cada projeto.</p>
+                        <p data-i18n="about_p2">Mais do que entregar um arquivo bonito, meu foco está em alcançar um resultado que realmente comunique e faça sentido para quem vai usá-lo. Por isso, mantenho um processo aberto ao diálogo e à escuta — se o cliente não estiver satisfeito, o trabalho ainda não terminou. Meu objetivo é sempre entregar algo que una técnica, criatividade e propósito.</p>
                         <div class="btn-social">
                             <a href="https://www.instagram.com/polvoradsn/"><button><i class="bi bi-instagram"></i></button></a>
                             <a href="https://wa.me/54997136790"><button><i class="bi bi-whatsapp"></i></button></a>
@@ -136,37 +138,37 @@
 
         <section class="especialidades" id="espec">
             <div class="interface">
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <h2 class="titulo" data-i18n="specialties_title">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-archive-fill"></i>
-                        <h3>Trabalhos</h3>
-                        <p>Venho explorando diferentes linguagens visuais por meio de projetos que vão da edição de vídeo e imagem à criação de peças gráficas, arte 3D, capas de álbum e thumbnails para YouTube. Essa diversidade me permite adaptar ideias a diferentes formatos e públicos, sempre com foco em identidade, impacto e originalidade.</p>
+                        <h3 data-i18n="specialty_work">Trabalhos</h3>
+                        <p data-i18n="specialty_work_desc">Venho explorando diferentes linguagens visuais por meio de projetos que vão da edição de vídeo e imagem à criação de peças gráficas, arte 3D, capas de álbum e thumbnails para YouTube. Essa diversidade me permite adaptar ideias a diferentes formatos e públicos, sempre com foco em identidade, impacto e originalidade.</p>
                     </div>
 
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-backpack-fill"></i>
-                        <h3>Formação</h3>
-                        <p>Com uma base sólida em comunicação visual e experiência prática em ambientes criativos, desenvolvo soluções de design que equilibram estética e estratégia. Meu trabalho reflete uma visão atualizada do mercado, aliada à constante busca por inovação e sensibilidade às tendências culturais e digitais.</p>
+                        <h3 data-i18n="specialty_education">Formação</h3>
+                        <p data-i18n="specialty_education_desc">Com uma base sólida em comunicação visual e experiência prática em ambientes criativos, desenvolvo soluções de design que equilibram estética e estratégia. Meu trabalho reflete uma visão atualizada do mercado, aliada à constante busca por inovação e sensibilidade às tendências culturais e digitais.</p>
                     </div>
 
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-bag-check-fill"></i>
-                        <h3>Clientes</h3>
-                        <p>Um projeto só está finalizado quando o cliente está verdadeiramente satisfeito. Acredito que o bom design vai além da estética.</p>
+                        <h3 data-i18n="specialty_clients">Clientes</h3>
+                        <p data-i18n="specialty_clients_desc">Um projeto só está finalizado quando o cliente está verdadeiramente satisfeito. Acredito que o bom design vai além da estética.</p>
                     </div>
                 </div>
             </div>
          </section>
 
         <form id="contact-form">
-            <h2>FALA <span>COMIGO:</span></h2>
+            <h2 data-i18n="form_title">FALA <span>COMIGO:</span></h2>
             <input type="text" name="user_name" placeholder="Seu nome" required>
             <input type="email" name="user_email" placeholder="Seu e-mail" required>
             <textarea name="message" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" data-i18n="btn_send">Enviar</button>
             <p id="status"></p>
           </form>
         
@@ -193,8 +195,8 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-rodape">
-                        <h2>COMO ME <span>ENCONTRAR:</span></h2>
-                        <p>Se gostou do que viu e quer trabalhar comigo basta clicar no botão de contato ou mandar um e-mail para <span>spolvoramatheus@gmail.com</span>.</p>
+                        <h2 data-i18n="footer_title">COMO ME <span>ENCONTRAR:</span></h2>
+                        <p data-i18n="footer_desc">Se gostou do que viu e quer trabalhar comigo basta clicar no botão de contato ou mandar um e-mail para <span>spolvoramatheus@gmail.com</span>.</p>
                         <div class="btn-social">
                             <a href="https://www.instagram.com/polvoradsn/"><button><i class="bi bi-instagram"></i></button></a>
                             <a href="https://wa.me/54997136790"><button><i class="bi bi-whatsapp"></i></button></a>
@@ -238,42 +240,85 @@
     });
   </script>
 
-  <script>
+<script>
   const translations = {
     pt: {
       title: 'Polvora creative',
       hero_title: 'TRANSFORMANDO IDEIAS EM <span>REALIDADE DIGITAL.</span>',
       hero_desc: 'Sou designer gráfico especializado em criar identidades visuais, peças para redes sociais e materiais impressos que comunicam com clareza e impacto. Combinando criatividade, técnica e atenção aos detalhes, desenvolvo soluções visuais que fortalecem marcas e conectam ideias ao público certo.',
-      btn_contact: 'Contato'
+      btn_contact: 'Contato',
+      portfolio_title: "ALGUNS <span>EXEMPLOS:</span>",
+      about_title: "MUITO PRAZER, <span>SOU MATHEUS PÓLVORA</span>",
+      about_p1: "Sou um criador visual movido pela curiosidade e pela vontade de transformar ideias em impacto. Minha experiência passa por diversas áreas do design digital, como edição de imagem e vídeo, criação gráfica, modelagem 3D, capas de álbum e thumbnails para redes sociais. Acredito que explorar diferentes formatos me dá repertório para desenvolver soluções visuais únicas e adaptadas a cada projeto.",
+      about_p2: "Mais do que entregar um arquivo bonito, meu foco está em alcançar um resultado que realmente comunique e faça sentido para quem vai usá-lo. Por isso, mantenho um processo aberto ao diálogo e à escuta — se o cliente não estiver satisfeito, o trabalho ainda não terminou. Meu objetivo é sempre entregar algo que una técnica, criatividade e propósito.",
+      specialties_title: "MINHAS <span>ESPECIALIDADES.</span>",
+      specialty_work: "Trabalhos",
+      specialty_work_desc: "Venho explorando diferentes linguagens visuais por meio de projetos que vão da edição de vídeo e imagem à criação de peças gráficas, arte 3D, capas de álbum e thumbnails para YouTube. Essa diversidade me permite adaptar ideias a diferentes formatos e públicos, sempre com foco em identidade, impacto e originalidade.",
+      specialty_education: "Formação",
+      specialty_education_desc: "Com uma base sólida em comunicação visual e experiência prática em ambientes criativos, desenvolvo soluções de design que equilibram estética e estratégia. Meu trabalho reflete uma visão atualizada do mercado, aliada à constante busca por inovação e sensibilidade às tendências culturais e digitais.",
+      specialty_clients: "Clientes",
+      specialty_clients_desc: "Um projeto só está finalizado quando o cliente está verdadeiramente satisfeito. Acredito que o bom design vai além da estética.",
+      form_title: "FALA <span>COMIGO:</span>",
+      btn_send: "Enviar",
+      footer_title: "COMO ME <span>ENCONTRAR:</span>",
+      footer_desc: "Se gostou do que viu e quer trabalhar comigo basta clicar no botão de contato ou mandar um e-mail para"
     },
     en: {
       title: 'Polvora creative',
       hero_title: 'TURNING IDEAS INTO <span>DIGITAL REALITY.</span>',
-      hero_desc: 'I’m a graphic designer specializing in creating visual identities, social media assets, and print materials that communicate clearly and make an impact. By combining creativity, technical skill, and attention to detail, I develop visual solutions that strengthen brands and connect ideas with the right audience.',
-
-      btn_contact: 'Contact'
+      hero_desc: 'I’m a graphic designer specialized in creating visual identities, social media assets, and printed materials that communicate clearly and effectively. By combining creativity, technique, and attention to detail, I develop visual solutions that strengthen brands and connect ideas with the right audience.',
+      btn_contact: 'Contact',
+      portfolio_title: "SOME <span>EXAMPLES:</span>",
+      about_title: "NICE TO MEET YOU, <span>I'M MATHEUS PÓLVORA</span>",
+      about_p1: "I'm a visual creator driven by curiosity and a desire to turn ideas into impact. My experience spans various areas of digital design, such as image and video editing, graphic creation, 3D modeling, album covers, and YouTube thumbnails. I believe that exploring different formats gives me the repertoire to develop unique and tailored visual solutions for each project.",
+      about_p2: "More than delivering a beautiful file, my focus is on achieving a result that truly communicates and makes sense to the user. That's why I maintain a process open to dialogue and feedback — if the client isn't satisfied, the work isn't finished. My goal is always to deliver something that combines technique, creativity, and purpose.",
+      specialties_title: "MY <span>SPECIALTIES.</span>",
+      specialty_work: "Work",
+      specialty_work_desc: "I've been exploring different visual languages through projects ranging from video and image editing to graphic pieces, 3D art, album covers, and YouTube thumbnails. This diversity allows me to adapt ideas to different formats and audiences, always focusing on identity, impact, and originality.",
+      specialty_education: "Education",
+      specialty_education_desc: "With a solid foundation in visual communication and practical experience in creative environments, I develop design solutions that balance aesthetics and strategy. My work reflects an up-to-date market vision, combined with a constant pursuit of innovation and sensitivity to cultural and digital trends.",
+      specialty_clients: "Clients",
+      specialty_clients_desc: "A project is only finished when the client is truly satisfied. I believe good design goes beyond aesthetics.",
+      form_title: "TALK <span>TO ME:</span>",
+      btn_send: "Send",
+      footer_title: "HOW TO <span>FIND ME:</span>",
+      footer_desc: "If you liked what you saw and want to work with me, just click the contact button or send an email to"
     }
   };
 
-    const langToggle = document.getElementById('lang-toggle');
+  const langToggle = document.getElementById('lang-toggle');
 
-    langToggle.addEventListener('change', () => {
-      if (langToggle.checked) {
-        setLanguage('en');
-      } else {
-        setLanguage('pt');
-      }
+  function setLanguage(lang) {
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const translation = translations[lang][key];
+      if (translation) el.innerHTML = translation;
     });
 
-    // Atualizar o estado do toggle conforme o idioma salvo no localStorage
-    window.onload = () => {
-      const savedLang = localStorage.getItem('siteLang') || 'pt';
-      setLanguage(savedLang);
-      langToggle.checked = savedLang === 'en';
-    };
+    // Troca o atributo lang da <html>
+    document.documentElement.lang = lang;
+    localStorage.setItem('siteLang', lang);
+  }
 
+  langToggle.addEventListener('change', () => {
+    const lang = langToggle.checked ? 'en' : 'pt';
+    setLanguage(lang);
+  });
+
+  // Carregar idioma salvo
+  window.onload = () => {
+    const savedLang = localStorage.getItem('siteLang') || 'pt';
+    setLanguage(savedLang);
+    langToggle.checked = savedLang === 'en';
+
+    // Carregar tema escuro também
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.getElementById("theme-style").setAttribute("href", savedTheme);
+    }
+  };
 </script>
+
 </body>
-</html>
-                     
-                     
+</html>                    
